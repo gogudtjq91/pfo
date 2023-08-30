@@ -111,7 +111,12 @@
 			</div>
 			<div class="nonDiv"></div>
 		</div>
-
+		
+		
+		
+		
+		
+		포트폴리오 정리하기
 		<h4>홈페이지 사용할 색상 종류 (컨셉)</h4>
 		<div style="background-color : #DFD3FA; color: white; height: 200;">DFD3FA</div>	
 		<div style="background-color : #E5E7FD; color: white; height: 200;">E5E7FD</div> 

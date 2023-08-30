@@ -132,6 +132,7 @@ body{
 }
 
 .skillDiv .box {
+	min-width: 170px;
   	width: 70%;
     padding: 0 20 10 20;
     border: 1px solid #b8b8b86b;
