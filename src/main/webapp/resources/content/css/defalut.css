@@ -1,0 +1,55 @@
+body{
+	padding: 0;
+    margin: 0;
+    font-family: Pretendard Variable,-apple-system,BlinkMacSystemFont,Apple SD Gothic Neo,sans-serif; */
+    -webkit-tap-highlight-color: transparent;
+    /* color: #4c6ef5cc; */
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* body,h1,h2,h3,h4,input,button,textarea,pre, select{font:normal 15px/1 Noto Sans, Pretendard-Regular, 'Nanum Gothic', 'µ¸¿ò',Dotum, sans-serif;color:#666666;} */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, th, td, form, fieldset, legend, textarea, input, select, textarea, button, article, aside, dialog, footer, header, section, footer, nav, figure, main {
+    margin: 0;
+    padding: 0;
+}
+
+/* h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+ */
+  
+h2 {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .4em;
+    line-height: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+ 
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px; 
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
