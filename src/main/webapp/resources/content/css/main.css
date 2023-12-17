@@ -13,10 +13,12 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 2280px;
-    height: 120px;
+    height: 86px;
     margin: 0 auto;
     padding: 0 40px;
     width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #fff;
 }
 
 .header_logo{
@@ -255,7 +257,7 @@ span {
 
 .section_history .section_inner {
 	padding-top: 260px;
-	height: 550;
+	height: 550px;
 }
 
 /* .section_history .img {
@@ -286,7 +288,7 @@ span {
 	    position: absolute;
 	    top: 0;
 	    width: 100%;
-	    height: 100;
+	    height: 100px;
 	    background-image: url(./image/visual_bg7_1.png);
 	    background-position: center;
 	    -webkit-background-size: cover;
@@ -297,7 +299,8 @@ span {
 	
 	.section_history .section_inner {
 		padding-top: 160px;
-		height: 500;
+		height: 500px;
+		z-index: 10;
 	}
 	
 	.section_history::after {
@@ -305,7 +308,7 @@ span {
 	    position: absolute;
 	    bottom: 0;
 	    width: 100%;
-	    height: 100;
+	    height: 100px;
 	    background-image: url(./image/visual_bg5.png);
 	    background-position: center;
 	    -webkit-background-size: cover;
@@ -333,8 +336,14 @@ span {
 	
 	.section_history .section_inner {
 		padding-top: 160px;
-		height: 1350px;
+		height: auto;
+		z-index: 10;
 	}
+	
+	.section_skill .section_inner {
+		padding-bottom: 50px;
+	}
+		
 	
 	.section_history::after {
 	    content: "";
@@ -378,7 +387,7 @@ span {
     align-content: space-around;
     -ms-flex-line-pack: distribute;
     /* height: calc(100% - (7.5rem + 1px)); */
-    height: 500px;
+    height: 580px;
 }
 
 
@@ -437,6 +446,7 @@ span {
     box-sizing: border-box;
     border-radius: 15px;
     /* overflow: hidden; */
+    min-height: 260px;
 }
 
 .centerBox{
@@ -446,9 +456,9 @@ span {
 
 
 .skillDiv .box .boxT {
-    margin: 0 25px;
-    margin-top: 6.5px;
-    height: 15%;
+    /* margin: 0 25px;
+    margin-top: 6.5px; */
+    height: 10%;
 }
 
 .skillDiv .box .boxC{
@@ -468,7 +478,13 @@ span {
 
 
 .skillDiv .box .boxT p{
-	border-bottom: 1px solid #b8b8b86b;
+	/* border-bottom: 1px solid #b8b8b86b; */
+	font-size: 15px;
+    font-family: "SUIT-Regular";
+    letter-spacing: 0.1em;
+    margin: 4px 38px;
+    margin-top: 11.5px;
+    font-weight: 700;
 }
 
 .skillDiv .box img {
@@ -478,6 +494,13 @@ span {
     height: 35%;
     max-width: 100%;
     width: 26%;
+}
+
+.skillDiv .box .boxC.twoItem img{
+    margin: 10px;
+    height: 40%;
+    max-width: 100%;
+    width: 30%;
 }
 
 .skillDiv .box:hover {
@@ -528,95 +551,28 @@ span {
 	}
 }
 
-@media screen and (max-width: 800px){
-	.skillDiv {
-	    display: -ms-flexbox;
-	    flex-flow: column wrap;
-	    align-content: space-around;
-	    -ms-flex-line-pack: distribute;
-	    height: 550px;
-	}
-	
-	.skillDiv .box img {
-	    margin: 10px;
-	    max-width: 100%;
-	    width: 60px;
-    	height: 40px;
-	}
-	
-	.skillDiv .nonDiv {
-	    float: left;
-	    width: 100%;
-	    height: 2.5%;
-	}
-	.skillDiv .leftDiv {
-	    float: left;
-	    width: 100%;
-	    height: 30%;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    flex-direction: row;
-	    align-content: space-around;
-	    flex-wrap: wrap;
-	}
-	.skillDiv .centerDiv {
-	    float: left;
-	    width: 100%;
-	    height: 35%;
-	    justify-content: center;
-	    align-items: center;
-	    display: flex;
-	    align-content: flex-start;
-	    flex-wrap: wrap;
-	    flex-direction: row;
-	}
-	.skillDiv .rigthDiv {
-	    float: left;
-	    width: 100%;
-	    height: 30%;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    flex-direction: row;
-	    align-content: space-around;
-	    flex-wrap: wrap;
-	}
-	
-	.skillDiv .box{
-		width: 45%;
-	    height: 90%;
-	    padding: 0 20 10 20;
-	    border: 1px solid #b8b8b86b;
-	    /* box-shadow: 5px 5px 0px; */
-	    margin: auto;
-	    margin-bottom: 30px;
-	    transition: all 0.2s;
-	    transition-delay: 0.1s;
-	    box-sizing: border-box;
-	    border-radius: 15px;
-	}
-	
-	.skillDiv .centerBox{
-		width: auto !important;
-    	height: 90% !important;
-	}
-}
-
 @media screen and (max-width: 639px){
 	.skillDiv {
 	    display: -ms-flexbox;
 	    flex-flow: column wrap;
 	    align-content: space-around;
 	    -ms-flex-line-pack: distribute;
-	    height: 550px;
+	    height: 650px;
 	}
 	
 	.skillDiv .box img {
 	    margin-top: 10px;
 	    max-width: 100%;
-	    width: 50px;
-    	height: 40px;
+        width: 63px;
+   		height: 49px;
+	}
+	
+	.skillDiv .box .boxC.twoItem img{
+		margin-top: 10px;
+	    max-width: 100%;
+	    width: 69px;
+    	height: 54px;
+   	    gap: 0 68px;
 	}
 	
 	.skillDiv .nonDiv {
@@ -663,7 +619,7 @@ span {
 	}
 	
 	.skillDiv .box {
-	    width: 100%;
+	    width: 95%;
 	    height: 50%;
 	    padding: 0 20 10 20;
 	    border: 1px solid #b8b8b86b;
@@ -674,13 +630,25 @@ span {
 	    transition-delay: 0.1s;
 	    box-sizing: border-box;
 	    border-radius: 15px;
+	    min-height: 110px;
 	}
 	
 	.skillDiv .box .boxT {
-	    margin: 0 25px;
-	    margin-top: 6.5px;
+	    /* margin: 0 25px;
+	    margin-top: 6.5px; */
 	    /* height: 15%; */
 	}
+	
+	.skillDiv .box .boxT p{
+		/* border-bottom: 1px solid #b8b8b86b; */
+		font-size: 15px;
+	    font-family: "SUIT-Regular";
+	    letter-spacing: 0.1em;
+	    margin: 4px 22px;
+	    margin-top: 11.5px;
+	    font-weight: 700;
+	} 
+		
 	
 	.skillDiv .box .boxC{
 		text-align: center;
@@ -705,7 +673,7 @@ span {
 	}
 	
 	.skillDiv .centerBox{
-		width: 100% !important;
+		width: 95% !important;
     	height: 50% !important;
 	}
 }
@@ -714,11 +682,71 @@ span {
 
 
 
+.pd_5{
+	padding-bottom: 5px;
+}
 
+.pd_8{
+	padding-bottom: 8px;
+}
+
+.pd_120{
+	padding-bottom: 120px;
+}
+
+.mb_01{
+	margin-bottom: 0.1em;
+}
+
+.point{
+	background: url(/resources/content/css/image/pfo3.png) no-repeat center;
+    position: relative;
+    top: 18px;
+    height: 15px;
+    width: 100%;
+}
 
 .section_portfolio .section_inner {
 	padding-top: 50px;
 }
+
+.section_portfolio .section_inner dl{
+	width: 100%;
+    background: url(/resources/content/css/image/gray_line.gif) repeat-y 50% top;
+}
+
+.section_portfolio .section_inner .comp_name{
+	width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    padding-bottom: 54px;
+}
+
+.section_portfolio .section_inner .left_item{
+	padding-bottom: 54px;
+    width: 45%;
+    text-align: end;
+}
+
+.section_portfolio .section_inner .right_item{
+	margin-left: 55%;
+    padding-bottom: 54px;
+    width: 45%;
+}
+
+.section_portfolio .section_inner li{
+	display: block;
+	letter-spacing: 0.1em;
+}	
+
+
+.section_portfolio .section_inner li.sub_title{
+	font-size: 14px;
+    font-weight: 600;
+}
+
+
 
 
 .section_inner {
@@ -746,12 +774,13 @@ span {
 
 .title{
 	margin-bottom: 35px;
-    font-family: "Nanum Gothic";
-    font-size: 38px;
+    font-family: SUIT-Regular;
+    font-size: 23px;
     line-height: 45px;
     letter-spacing: -0.5px;
     font-weight: bold;
-    color: #464646;
+    color: #7F5539;
+    letter-spacing: 0.1em;
 }
 
 
@@ -790,7 +819,7 @@ span {
 @media screen and (max-width: 639px){
 	.visual {
 		background-color: #fff8f2;
-    	height: 630;
+    	height: 630px;
 	}
 	
 	.visual_info {
@@ -930,7 +959,7 @@ span {
 	
 	.visual_info .comment{
 	    top: 250px;
-	    margin-left: calc(16%);
+	    margin-left: calc(12%);
 	    width: 80%;
 	}
 	
@@ -5752,7 +5781,7 @@ html.lenis {
     }
 
     .md\:bottom-68 {
-        bottom: 4.25rem
+        bottom: 1.25rem
     }
 
     .md\:right-40 {

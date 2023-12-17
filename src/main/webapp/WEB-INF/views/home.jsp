@@ -2,6 +2,7 @@
 <%@ page session="false"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <title>KHS Portfolio</title>
@@ -67,15 +68,15 @@
 		</div>
 		
 		<!-- skill 영역 -->
-		<section class="section section_skill z-20">
-			<div class="section_inner" id="nav_skill">
+		<section class="section section_skill z-20" id="nav_skill">
+			<div class="section_inner">
 				<h2 class="title">SKILL</h2>
 				<div class="skillDiv">
 				<div class="nonDiv"></div>
 				<div class="leftDiv">
-					<div class="box" style="margin-top: 15px;">
+					<div class="box">
 						<div class="boxT">
-							<p class="p_font">DB</p>
+							<p>DB</p>
 						</div>
 						<div class="boxC">
 							 <img alt="oracle" src="/resources/content/css/image/icon/256/oracle256.png">
@@ -86,7 +87,7 @@
 					</div>
 					<div class="box">
 						<div class="boxT">
-							<p class="p_font">Web</p>
+							<p>Web</p>
 						</div>
 						<div class="boxC">
 							<img alt="html" src="/resources/content/css/image/icon/256/html256.png"> 
@@ -99,7 +100,7 @@
 				<div class="centerDiv">
 					<div class="box centerBox" >
 						<div class="boxT">
-							<p class="p_font">Back-end</p>
+							<p>Back-end</p>
 						</div>
 						<div class="boxC twoItem">
 							<img alt="spring" src="/resources/content/css/image/icon/256/spring.png"> 
@@ -108,9 +109,9 @@
 					</div>
 				</div>
 				<div class="rigthDiv">
-					<div class="box" style="margin-top: 15px;">
+					<div class="box">
 						<div class="boxT">
-							<p class="p_font">Server</p>
+							<p>Server</p>
 						</div>
 						<div class="boxC">
 							<img alt="apache" src="/resources/content/css/image/icon/256/apache256.png"> 
@@ -138,13 +139,13 @@
 		<div class="section_div"></div>
 		
 		<!-- history 영역  -->
-		<section class="section section_history" id="nav_history">
-			<div class="section_inner">
+		<section class="section section_history">
+			<div class="section_inner" id="nav_history">
 				<h2 class="title">HISTORY</h2>
 				<div class="img" style="position: relative; z-index: 10;">
 					<picture>
 						<source srcset="/resources/content/css/image/history4.png" media="(min-width: 640px)">
-						<img src="/resources/content/css/image/history_mo.png" alt="">
+						<img src="/resources/content/css/image/history_mo2.png" alt="">
 					</picture>
 				</div>
 			</div>
@@ -154,21 +155,127 @@
 		<!-- portfolio 영역 -->
 		<section class="section section_portfolio z-20" id="nav_portfolio">
 			<div>
-			<div class="section_inner">
+			<div class="section_inner" style="font-size: 14px; font-family: SUIT-Regular;">
 				<h2 class="title">PORTFOLIO</h2>
-				<!-- class="c-service-strategy__section mx-[calc(10/375*100%)] mt-20 rounded-20 bg-texture-strategy-1 
-				text-white md:relative md:sticky md:top-[var(--site-header-height)] md:mx-[calc(20/1440*100%)] md:flex md:items-end" -->
-				<section class="pfo_item rd35 md_flex md_items-flex-end mt-20" style="height: 550px;top: 7rem;margin-bottom: -3.6rem;margin-top: 4.0625rem;background: #ede0d4;">
+				<dl>
+					<dt class="comp_name">OVOKOREA</dt>
+					<dt class="point"></dt>
+					<dd class="left_item" style="padding-bottom: 120px;">
+						<ul>
+							<li class="sub_title">2018.05 ~  2019.02</li>
+							<li class="sub_title pd_8">Mcdonald HR 구축</li>
+							<li class="mb_01">인사파트 개발</li>
+						</ul>
+					</dd>
+					<dt class="comp_name">SYWORKS</dt>
+					<dt class="point"></dt>
+					<dd  class="right_item">
+						<ul> 
+							<li class="sub_title">2019.07 ~ 2019.12</li>
+							<li class="sub_title pd_8">경희대 포털(Info21) / 역량관리(Aladdin) 시스템 구축</li>
+							<li class="mb_01">(구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 및 신규구축</li>
+							<li class="mb_01">하자보수 담당 및 진행</li>
+						</ul>
+					</dd>
+					<dt class="point"></dt>
+					<dd class="left_item">
+						<ul>
+							<li class="sub_title">2019.12 ~ 2020.05</li>
+							<li class="sub_title pd_8">고려대학교 외 5개 역량관리 시스템(portfolio) 구축</li>
+							<li class="mb_01">비교과 메뉴 개발 및 개별 커스텀 진행</li>
+							<li class="mb_01">Open Api 연동하여 기업 및 취업 메뉴 신규구축</li>
+						</ul>
+					</dd>
+					<dt class="point"></dt>
+					<dd class="right_item">
+						<ul> 
+							<li class="sub_title">2020.07 ~ 2022.04</li>
+							<li class="sub_title pd_8">유지보수팀 운영</li>
+							<li class="mb_01">사내 유지보수 정책안 및 업무 프로세스 수립 및 실행</li>
+							<li class="mb_01">유지보수 전체 일정 및 팀원 관리</li>
+							<li class="mb_01">역량관리시스템(portfolio) 고도화 업무 포함하여 유지보수 진행 및 웹취약점,<br>Sparrow(시큐어코딩) 및 서버 내 이슈사항 대응</li>
+							<li class="mb_01">인원증진 및 현장실습시스템(WESS) 추가 유지보수 담당</li>
+						</ul>
+					</dd>
+					<dt class="point"></dt>
+					<dd class="left_item">
+						<ul>
+							<li class="sub_title">2022.05 ~ 2022.09</li>
+							<li class="sub_title pd_8">경인교육대학교 교육실습 관리시스템 구축</li>
+							<li class="mb_01">전체 일정 관리 및 업무 분배</li>
+							<li class="mb_01">메뉴, 권한 등 공통 및 핵심 기능 개발</li>
+							<li class="mb_01">SSO/SSL 연동</li>
+						</ul>
+					</dd>
+					<dt class="point"></dt>
+					<dd class="right_item">
+						<ul> 
+							<li class="sub_title">2022.09 ~ 2022.12</li>
+							<li class="sub_title pd_8">서울사이버대학교 특성화 학생 역량관리 분석 시스템(SCU On-Flex) 구축</li>
+							<li class="mb_01">Toss Open Api 연동하여 결제 기능 포함된 비교과 메뉴 개발</li>
+							<li class="mb_01">서버 구축 및 SSO/SSL 연동</li>
+						</ul>
+					</dd>
+					<dt class="point"></dt>
+					<dd class="left_item">
+						<ul>
+							<li class="sub_title">2023.01 ~ 2023.04</li>
+							<li class="sub_title pd_8">한국외국어대학교 핵심역량 통합관리시스템(HUFSAbility) 고도화 사업</li>
+							<li class="mb_01">통계성 메뉴(CQI) 개발</li>
+						</ul>
+					</dd>
+					<dt class="point"></dt>
+					<dd class="right_item">
+						<ul> 
+							<li class="sub_title">2023.05 ~ 2023.09</li>
+							<li class="sub_title pd_8">가톨릭대학교 AI스마트통합지원시스템 신규 구축</li>
+							<li class="mb_01">전체 일정 관리 및 업무 분배</li>
+							<li class="mb_01">오픈배지 연동 메뉴 개발</li>
+							<li class="mb_01">설문 참여 및 설문 결과 분석 메뉴(프로파일링) 개발</li>
+						</ul>
+					</dd>
+					<dt class="point"></dt>
+					<dd class="left_item">
+						<ul>
+							<li class="sub_title pd_8">기타</li>
+							<li class="mb_01">로그인 보안 이슈 작업</li>
+							<li class="mb_01">업무 시 필요한 의사소통 및 관리 체계 취합 메뉴 개발</li>
+			    			<li class="mb_01">사내 시스템과 NAVERWORKS 알림톡 연동</li>
+						</ul>
+					</dd>
+				</dl>
+				<br><br>
+				<!-- <section class="pfo_item rd35 md_flex md_items-flex-end mt-20" 
+					style="height: 550px;top: 7rem;margin-bottom: -3.6rem;margin-top: 4.0625rem;">
+						OVOKOREA
+					  Mcdonald HR 구축 2018.05 ~  2019.02
+					  -인사파트 개발	
+				</section>
+				<section class="pfo_item rd35 md_flex md_items-flex-end mt-20" 
+					style="height: 550px;top: 9.7rem; margin-bottom: -0.9rem;margin-top: 1.25rem;">
+						SYWORKS
+				  경희대 포털 시스템 Info21 구축 / 경희대 Aladdin 구축 2019.07 ~ 2019.12
+				  - (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축
+				  - 구축 이후 고객과 소통하여 하자보수 진행
+				</section>
+				<section class="pfo_item rd35 md_flex md_items-flex-end mt-20" 
+					style="height: 550px;top: 7.9rem; margin-bottom: -2.7rem; margin-top: 3.125rem;">
+						포트폴리오 구축 2019.12 ~ 2020.05
+				  - 고려대학교 외 5개 포트폴리오 시스템 구축
+				  - 비교과 메뉴 개발 및 개별 커스텀 진행
+				  - Open API를 활용한 기업 및 취업 메뉴 신규 개발
+				</section> -->
+				<!-- <section class="pfo_item rd35 md_flex md_items-flex-end mt-20" style="height: 550px;top: 7rem;margin-bottom: -3.6rem;margin-top: 4.0625rem;background: #ede0d4;">
 					<div class="c-service-strategy__inner px-30 py-60 md:flex md:justify-between md:py-40 md:pl-[calc(40/1400*100%)] md:pr-[calc(95/1400*100%)]">
 						<div class="l-frame relative hidden l--n-[563] l--d-[508] md:block md:w-[calc(498/1265*100%)] md:self-center">
 							<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
 						</div>
-						<!-- md:self-end  -->
+						md:self-end 
 						<div class="md:w-[calc(615/1265*100%)] md:shrink-0 md:py-30">
 							<div>
 								<div class="h-2 w-32 rounded-full bg-white"></div>
 								<div class="mt-30 flex items-center justify-between gap-x-8 md:mt-40">
-									<h3 class="text-ja-headline-l">경희대 포털 시스템 Info21 구축 <br>/ 경희대 Aladdin 구축</h3>
+									<h3 class="text-ja-headline-l">Mcdonald HR 개발</h3>
 									<p class="text-en-label-xl flex gap-x-8 md:absolute md:bottom-68 md:right-40 md:gap-x-20">
 										<span>01</span><span class="text-en-label-xxxs opacity-50">/</span><span>05</span>
 									</p>
@@ -178,30 +285,58 @@
 								<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
 							</div>
 							<div class="md:mt-40"> 
-								<!-- <p class="text-ja-headline-m">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br class="md:hidden">
-									- 구축 이후 고객과 소통하여 하자보수 진행
-								</p> -->
 								<p class="text-ja-body-s mt-20">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br>
-									- 구축 이후 고객과 소통하여 하자보수 진행
+									- 인사파트 개발 
 								</p>
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- class="c-service-strategy__section mx-[calc(10/375*100%)] mt-20 rounded-20 bg-texture-strategy-2 text-white md:relative md:sticky md:top-[var(--site-header-height)] md:mx-[calc(20/1440*100%)] md:flex md:items-end" -->
+				<section class="pfo_item rd35 md_flex md_items-flex-end mt-20" style="height: 550px;top: 9.7rem; margin-bottom: -0.9rem;margin-top: 1.25rem;background: #b08968; color: white;">
+					<div class="c-service-strategy__inner px-30 py-60 md:flex md:justify-between md:py-40 md:pl-[calc(40/1400*100%)] md:pr-[calc(95/1400*100%)]">
+						<div class="l-frame relative hidden l--n-[563] l--d-[508] md:block md:w-[calc(498/1265*100%)] md:self-center">
+							<img class="w-full" src="/resources/content/css/image/pfo2_2.jpg" alt="" decoding="async">
+						</div>
+						md:self-end 
+						<div class="md:w-[calc(615/1265*100%)] md:shrink-0 md:py-30">
+							<div>
+								<div class="h-2 w-32 rounded-full bg-white"></div>
+								<div class="mt-30 flex items-center justify-between gap-x-8 md:mt-40">
+									<h3 class="text-ja-headline-l">유지보수팀 운영</h3>
+									<p class="text-en-label-xl flex gap-x-8 md:absolute md:bottom-68 md:right-40 md:gap-x-20">
+										<span>01</span><span class="text-en-label-xxxs opacity-50">/</span><span>04</span>
+									</p>
+								</div>
+							</div>
+							<div class="l-frame relative my-30 l--n-[563] l--d-[508] md:hidden">
+								<img class="w-full" src="/resources/content/css/image/pfo2_2.jpg" alt="" decoding="async">
+							</div>
+							<div class="md:mt-40"> 
+								<p class="text-ja-headline-m">
+									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br class="md:hidden">
+									- 구축 이후 고객과 소통하여 하자보수 진행
+								</p>
+								<p class="text-ja-body-s mt-20">
+									- 사내 유지보수 정책안 및 업무 프로세스 수립 및 실행<br>
+									- 유지보수 전체 일정 및 팀원 관리<br>
+									- 역량관리시스템(portfolio) 고도화 업무 포함하여 유지보수 진행 및 웹취약점, Sparrow(시큐어코딩) 및 서버 내 이슈사항 대응<br>
+									- 인원증진 및 현장실습시스템(WESS) 추가 유지보수 담당
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 				<section class="pfo_item rd35 md_flex md_items-flex-end mt-20" style="height: 550px;top: 7.9rem; margin-bottom: -2.7rem; margin-top: 3.125rem;background: #e6ccb2;">
 					<div class="c-service-strategy__inner px-30 py-60 md:flex md:justify-between md:py-40 md:pl-[calc(40/1400*100%)] md:pr-[calc(95/1400*100%)]">
 						<div class="l-frame relative hidden l--n-[563] l--d-[508] md:block md:w-[calc(498/1265*100%)] md:self-center">
 							<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
 						</div>
-						<!-- md:self-end  -->
+						md:self-end 
 						<div class="md:w-[calc(615/1265*100%)] md:shrink-0 md:py-30">
 							<div>
 								<div class="h-2 w-32 rounded-full bg-white"></div>
 								<div class="mt-30 flex items-center justify-between gap-x-8 md:mt-40">
-									<h3 class="text-ja-headline-l">경희대 포털 시스템 Info21 구축 <br>/ 경희대 Aladdin 구축</h3>
+									<h3 class="text-ja-headline-l">경희대 포털(Info21) <br>/ 역량관리(Aladdin) 시스템 구축</h3>
 									<p class="text-en-label-xl flex gap-x-8 md:absolute md:bottom-68 md:right-40 md:gap-x-20">
 										<span>02</span><span class="text-en-label-xxxs opacity-50">/</span><span>05</span>
 									</p>
@@ -211,79 +346,41 @@
 								<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
 							</div>
 							<div class="md:mt-40"> 
-								<!-- <p class="text-ja-headline-m">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br class="md:hidden">
-									- 구축 이후 고객과 소통하여 하자보수 진행
-								</p> -->
 								<p class="text-ja-body-s mt-20">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br>
-									- 구축 이후 고객과 소통하여 하자보수 진행
+									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 및 신규구축<br>
+ 									- 하자보수 담당 및 진행
 								</p>
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- class="c-service-strategy__section mx-[calc(10/375*100%)] mt-20 rounded-20 bg-texture-strategy-4 text-black-1 md:relative md:sticky md:top-[var(--site-header-height)] md:mx-[calc(20/1440*100%)] md:flex md:items-end" -->
 				<section class="pfo_item rd35 md_flex md_items-flex-end mt-20" style="height: 550px;top: 8.8rem;margin-bottom: -1.8rem;margin-top: 2.1875rem;background: #ddb892;">
 					<div class="c-service-strategy__inner px-30 py-60 md:flex md:justify-between md:py-40 md:pl-[calc(40/1400*100%)] md:pr-[calc(95/1400*100%)]">
 						<div class="l-frame relative hidden l--n-[563] l--d-[508] md:block md:w-[calc(498/1265*100%)] md:self-center">
-							<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
+							<img class="w-full" src="/resources/content/css/image/pfo1.png" alt="" decoding="async">
 						</div>
-						<!-- md:self-end  -->
+						md:self-end 
 						<div class="md:w-[calc(615/1265*100%)] md:shrink-0 md:py-30">
 							<div>
 								<div class="h-2 w-32 rounded-full bg-white"></div>
 								<div class="mt-30 flex items-center justify-between gap-x-8 md:mt-40">
-									<h3 class="text-ja-headline-l">경희대 포털 시스템 Info21 구축 <br>/ 경희대 Aladdin 구축</h3>
+									<h3 class="text-ja-headline-l">고려대학교 외 5개 역량관리 시스템(portfolio) 구축</h3>
 									<p class="text-en-label-xl flex gap-x-8 md:absolute md:bottom-68 md:right-40 md:gap-x-20">
 										<span>03</span><span class="text-en-label-xxxs opacity-50">/</span><span>05</span>
 									</p>
 								</div>
 							</div>
 							<div class="l-frame relative my-30 l--n-[563] l--d-[508] md:hidden">
-								<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
+								<img class="w-full" src="/resources/content/css/image/pfo1.png" alt="" decoding="async">
 							</div>
 							<div class="md:mt-40"> 
-								<!-- <p class="text-ja-headline-m">
+								<p class="text-ja-headline-m">
 									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br class="md:hidden">
-									- 구축 이후 고객과 소통하여 하자보수 진행
-								</p> -->
-								<p class="text-ja-body-s mt-20">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br>
 									- 구축 이후 고객과 소통하여 하자보수 진행
 								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				
-				<section class="pfo_item rd35 md_flex md_items-flex-end mt-20" style="height: 550px;top: 9.7rem; margin-bottom: -0.9rem;margin-top: 1.25rem;background: #b08968; color: white;">
-					<div class="c-service-strategy__inner px-30 py-60 md:flex md:justify-between md:py-40 md:pl-[calc(40/1400*100%)] md:pr-[calc(95/1400*100%)]">
-						<div class="l-frame relative hidden l--n-[563] l--d-[508] md:block md:w-[calc(498/1265*100%)] md:self-center">
-							<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
-						</div>
-						<!-- md:self-end  -->
-						<div class="md:w-[calc(615/1265*100%)] md:shrink-0 md:py-30">
-							<div>
-								<div class="h-2 w-32 rounded-full bg-white"></div>
-								<div class="mt-30 flex items-center justify-between gap-x-8 md:mt-40">
-									<h3 class="text-ja-headline-l">경희대 포털 시스템 Info21 구축 <br>/ 경희대 Aladdin 구축</h3>
-									<p class="text-en-label-xl flex gap-x-8 md:absolute md:bottom-68 md:right-40 md:gap-x-20">
-										<span>04</span><span class="text-en-label-xxxs opacity-50">/</span><span>05</span>
-									</p>
-								</div>
-							</div>
-							<div class="l-frame relative my-30 l--n-[563] l--d-[508] md:hidden">
-								<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
-							</div>
-							<div class="md:mt-40"> 
-								<!-- <p class="text-ja-headline-m">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br class="md:hidden">
-									- 구축 이후 고객과 소통하여 하자보수 진행
-								</p> -->
 								<p class="text-ja-body-s mt-20">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br>
-									- 구축 이후 고객과 소통하여 하자보수 진행
+									- 비교과 메뉴 개발 및 개별 커스텀 진행<br>
+ 									- Open Api 연동하여 기업 및 취업 메뉴 신규구축
 								</p>
 							</div>
 						</div>
@@ -296,12 +393,12 @@
 						<div class="l-frame relative hidden l--n-[563] l--d-[508] md:block md:w-[calc(498/1265*100%)] md:self-center">
 							<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
 						</div>
-						<!-- md:self-end  -->
+						md:self-end 
 						<div class="md:w-[calc(615/1265*100%)] md:shrink-0 md:py-30">
 							<div>
 								<div class="h-2 w-32 rounded-full bg-white"></div>
 								<div class="mt-30 flex items-center justify-between gap-x-8 md:mt-40">
-									<h3 class="text-ja-headline-l">경희대 포털 시스템 Info21 구축 <br>/ 경희대 Aladdin 구축</h3>
+									<h3 class="text-ja-headline-l">서울사이버대학교 특성화 학생 역량관리 분석 시스템(SCU On-Flex) 구축</h3>
 									<p class="text-en-label-xl flex gap-x-8 md:absolute md:bottom-68 md:right-40 md:gap-x-20">
 										<span>05</span><span class="text-en-label-xxxs opacity-50">/</span><span>05</span>
 									</p>
@@ -311,18 +408,18 @@
 								<img class="w-full" src="/resources/content/css/image/kuchive.png" alt="" decoding="async">
 							</div>
 							<div class="md:mt-40"> 
-								<!-- <p class="text-ja-headline-m">
+								<p class="text-ja-headline-m">
 									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br class="md:hidden">
 									- 구축 이후 고객과 소통하여 하자보수 진행
-								</p> -->
+								</p>
 								<p class="text-ja-body-s mt-20">
-									- (구)업체와 협업을 통한 차세대 시스템으로 리뉴얼 구축 <br>
-									- 구축 이후 고객과 소통하여 하자보수 진행
+									- Toss Open Api 연동하여 결제 기능 포함된 비교과 메뉴 개발 <br>
+									- 서버 구축 및 SSO/SSL 연동
 								</p>
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 			</div>
 			</div>
 			<br><br><br><br>
@@ -367,9 +464,6 @@
 	        animatePath(".path05", i, e);
 	        animatePath(".path06", i, e);
 	    } */
-	
-	    // showLineLogoTypeOutline 함수 실행 예시
-	    // 인덱스 i와 딜레이 e를 설정하여 함수 호출
 	    //showLineLogoTypeOutline(1600, 1100); // 예시 값으로 설정
 	    function showLineArrow2(i, e) {
             //const svgArrow = document.querySelector("[x-ref='svgRound']");
